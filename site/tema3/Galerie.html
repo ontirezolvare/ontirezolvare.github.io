@@ -1,0 +1,119 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <Style>
+#zona{
+    text-align: center;
+}
+#zonaz{
+    background-color:cornflowerblue;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#zonaz a{       /* css pentru linkruile din zona2 */
+    background-color: pink;
+    padding: 4px 10px;
+    border-radius: 10px; /* colturi frumoase */
+}
+#Zona3 {
+    width: 80%;
+    margin: auto;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.poza {
+    position: relative;
+    text-align: center;
+}
+
+.poza img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 10px double blue; 
+}
+
+.poza span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.poza:hover span {
+    opacity: 1;
+}
+#zona4{
+    overflow: hidden;
+    white-space: nowrap;
+}
+#zona4 h4 {
+    display: inline-block;
+    animation: miscare 5s linear infinite;
+}
+
+@keyframes miscare {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+        </Style>
+    </head>
+    <body>
+        <div id="zona" class="zona">
+            <img src="ModelBanner.jpg" width="25%">
+        </div>
+
+        <div id="zonaz" class="zona">
+            <a href="index.html">Cosmosul</a>
+            <a href="Explorare.html">Explorarea Spatiala</a>
+            <a href="Galerie.html">Galerie foto</a>
+        </div>
+
+        <div id="Zona3">
+    <div class="galerie">
+        <div class="poza">
+            <img src="1.jpg" alt="1.jpg">
+            <span>1.jpg</span>
+        </div>
+        <div class="poza">
+            <img src="3.jpg" alt="3.jpg">
+            <span>3.jpg</span>
+        </div>
+        <div class="poza">
+            <img src="2.jpg" alt="2.jpg">
+            <span>2.jpg</span>
+        </div>
+        <div class="poza">
+            <img src="5.jpg" alt="5.jpg">
+            <span>5.jpg</span>
+        </div>
+        <div class="poza">
+            <img src="4.jpg" alt="4.jpg">
+            <span>4.jpg</span>
+        </div>
+        <div class="poza">
+            <img src="6.jpg" alt="6.jpg">
+            <span>6.jpg</span>
+        </div>
+    </div>
+     <div id="zona4" class="zona">
+            <h4>© ONTI2024–etapa națională</h4>
+        </div>
+    </body>
+</html>
